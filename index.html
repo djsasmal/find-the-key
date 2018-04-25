@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+    
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            
+            <!--Nav brand-->
+            <a class="navbar-brand" href="#">LOGO</a>
+            
+            <!--Nav Collapsible Button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Nav Collapsible Content-->
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                
+                <!--Links-->
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#requestLK">Request LK</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#LKqueue">LK Queue</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Bundles">Bundles</a>
+                    </li>
+                    
+                    
+                </ul>
+                <!--Links--->
+                
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+    
+        </nav>
+        <!--Navbar-->
+   
+    </header>
+    <!--Main Navigation-->
+    
+    
+    <!-- Tab panes -->
+        <!--1st Tab Content-->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane show active" id="Home">
+                
+                     <div class="starter-template">
+                        <h1>How does this work?</h1>
+                        <p class="lead">Foundation: Price bundles created
+                        <br>
+                        View updated information for clients
+                        <br>
+                        Request a license key
+                        <br>
+                        Watch the queue & accept/decline license key requests
+                     
+                         </p>
+                    </div>
+                    </div>
+        
+        <!--2nd Tab Content-->            
+                    <div role="tabpanel" class="tab-pane" id="Clients">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="starter-template">
+                                        <ul class="nav nav-pills nav" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="HostedClients" data-toggle="tab" href="#HostedClients" role="tab" aria-controls="Hosted" aria-selected="true">Hosted</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="SelfhostedClients" data-toggle="tab" href="#SelfhostedClients" role="tab" aria-controls="self hosted" aria-selected="false">Self-hosted</a>
+                                            </li>
+                            
+                                        </ul>
+                                <!--Table of hosted clients-->
+                       <br>
+                                        
+                        <div class="tab-content">
+                             <div role="tabpanel" class="tab-pane show active" id="HostedClients">
+                                <div class="container">
+                                    <div class="table-responsive">  
+                                        <!--for filtering table by client name-->
+                                        <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for client names.." id="myInput" onkeyup="myFunction()">
+                                        <p></p>
+                                        <table class="table" id="hostedtable">
+                                        <thead>
+                                            <tr>
+                                            <th>#</th>
+                                            <th>Client Name</th>
+                                            <th>URL</th>
+                                            <th># of users</th>
+                                            <th>LK</th>
+                                            <th>LK Last Updated</th>
+                                            <th>Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>1</td>
+                                            <td>ClientABC</td>
+                                            <td>ClientABC.test.myCority.com</td>
+                                            <td>35</td>
+                                            <td>LK13777</td>
+                                            <td>Admin user on 14/12/17 3:00 PM EST</td>
+                                            <td>Details</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2</td>
+                                            <td>DEF</td>
+                                            <td>ClientABC.test.myCority.com</td>
+                                            <td>35</td>
+                                            <td>LK13777</td>
+                                            <td>Admin user on 14/12/17 3:00 PM EST</td>
+                                            <td>Details</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3</td>
+                                            <td>MNY</td>
+                                            <td>ClientABC.test.myCority.com</td>
+                                            <td>35</td>
+                                            <td>LK13777</td>
+                                            <td>Admin user on 14/12/17 3:00 PM EST</td>
+                                            <td>Details</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4</td>
+                                            <td>CRA</td>
+                                            <td>ClientABC.test.myCority.com</td>
+                                            <td>35</td>
+                                            <td>LK13777</td>
+                                            <td>Admin user on 14/12/17 3:00 PM EST</td>
+                                            <td>Details</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                 </div>
+                            </div>
+                                    
+                       </div>
+                                        <!--Hosted Client table-->
+                                        <!--Not working code to filter by nav bar pill
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="HostedClients">
+                                          
+                                                <p>TABLE  Hosted Clients</p>
+                                           
+                                            </div>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                 
+                        </div>
+                        
+                    </div>
+                    
+        <!--3rd Tab Content--> 
+                    <div role="tabpanel" class="tab-pane" id="requestLK">
+                        <div class="container">
+                        <form>
+                            <h3>Request a License key</h3>
+                            <hr>
+                            <div class="form-group">
+                                <label for="clientname">Name</label>
+                                <input type="clientname" class="form-control" id="clientname" aria-describedby="emailHelp" placeholder="Enter new client name">
+                                <small id="clientnamehelp" class="form-text text-muted">Enter new client name or pick existing account</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">Description</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="1" placeholder="This is enterprise tier for safety clients"></textarea>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="exampleSelect2">Requested Bundle</label>
+                        
+                        
+                                <select multiple class="form-control" id="exampleSelect2">
+                                    
+                                    <option>Bundle B1</option>
+                                    <option>Bundle B2</option>
+                                    <option>Bundle B3</option>
+                                    <option>Bundle B4</option>
+                                    <option>Bundle B5</option>
+                                </select>
+                                <small id="fileHelp" class="form-text text-muted">Ctrl or shift click for multiple selections</small>
+                            </div>
+                    
+                            <div><link>Expand to see all modules in selected bundle(s)</link></div>    
+            
+                        <br>    
+                            <button type="submit" class="btn btn-primary">Request License Key</button>
+                            <button type="submit" class="btn btn-secondary">Cancel</button>
+                     </form>
+                            
+          
+                        
+                    </div>
+                
+                </div>
+                       
+                    
+      <!--4th Tab Content--> 
+                    <div role="tabpanel" class="tab-pane" id="LKqueue">
+                        
+                    <div class="container">
+                    <h3>Request Queue</h3>
+                    <hr>
+                        <div class="card">
+                            <div class="card-header">
+                               Request Submitted: 12th April, 2018, 11:10 PM EST
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">New License Key Request</h6>
+                                <p class="card-text"><strong>LK Details: </strong>All supporting license key modules will be displayed here</p>
+                                 <p class="card-text"><strong>Any additional comments:</strong></p>
+                                
+                                <a href="#" class="btn btn-outline-danger">Reject</a>
+                                <a href="#" class="btn btn-outline-success">Get License</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2 days ago
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    
+     <!--5th Tab Content--> 
+                    <div role="tabpanel" class="tab-pane" id="Bundles">
+                        <p>
+                          <div class="container">
+    <!-- Content here -->
+                <form>
+                    <h3>Create a bundle</h3>
+                    <hr>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter a name for bundle">
+                        <small id="emailHelp" class="form-text text-muted">Enter a suitable name for the price bundle</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Description</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="2" placeholder="Enter a description for this bundle"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleSelect2">Selected Modules for this bundle</label>
+                         <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                        
+                        <select multiple class="form-control" id="exampleSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small id="fileHelp" class="form-text text-muted">Click on edit (pencil) icon to modify selections</small>
+                    </div>
+                    
+                <div>Do you want to archive or inactive this bundle?</div>    
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Yes, make it inactive
+                    </label>
+                </div>
+                <br>    
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-secondary">Cancel</button>
+            </form>
+                
+  
+        
+    <main role="main" class="container">
+
+       
+
+    </main>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--for filtering Client table-->
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("hostedtable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+    
+    
+</body>
+</html>
